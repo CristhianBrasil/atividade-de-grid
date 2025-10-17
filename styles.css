@@ -1,0 +1,57 @@
+.layout-container {
+  display: grid;
+  min-height: 100vh; 
+  gap: 15px;
+
+  /* 🔹 Define 3 colunas na última linha */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  
+  /* 🔹 Define as áreas do layout */
+  grid-template-areas: 
+    "header header header"
+    "content content content"
+    "footer1 footer2 footer3";
+}
+
+/* Áreas principais */
+.header {
+  grid-area: header;
+  background: #834104;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+.content {
+  grid-area: content;
+  background: #474747;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* 🔹 Cada footer ocupa uma área diferente */
+.footer1 {
+  grid-area: footer1;
+  background: #38328d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer2 {
+  grid-area: footer2;
+  background: #38328d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer3 {
+  grid-area: footer3;
+  background: #38328d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
